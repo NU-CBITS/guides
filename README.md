@@ -5,6 +5,9 @@ Documentation of the CBITS development process.
 Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
+* [new_projects](/development/new_projects)
+* [pull_requests](/git/pull_requests)
+
 ## Contributing
 
 clone the repository
