@@ -10,7 +10,7 @@ development and deployment can proceed:
 
 ## Rails
 
-The following must be run as part of the default rake task:
+The following must be run as part of the `rake` task:
 
 * RuboCop
 * Brakeman
@@ -19,7 +19,7 @@ The following must be run as part of the default rake task:
 
 ## Cordova
 
-The build process must include:
+The following must be run as part of the `npm test` task:
 
 * JSHint
 * unit and feature test suites
