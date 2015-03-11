@@ -1,6 +1,9 @@
 # CBITS developer guides
 
-Documentation of the CBITS development process
+Documentation of the CBITS development process.
+
+Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
+inspiration.
 
 ## Contributing
 
@@ -24,4 +27,4 @@ run the Markdown lint tool
 mdl .
 ```
 
-submit a pull request
+[submit a pull request](/git/pull_requests)
