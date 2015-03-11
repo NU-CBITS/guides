@@ -5,8 +5,10 @@ Documentation of the CBITS development process.
 Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
-* [new_projects](/development/new_projects)
-* [pull_requests](/git/pull_requests)
+* [development](/development)
+  * [new projects](/development/new_projects)
+* [git](/git)
+  * [pull requests](/git/pull_requests)
 
 ## Contributing
 
@@ -22,12 +24,10 @@ install the Markdown lint tool
 gem install mdl
 ```
 
-make edits
-
-run the Markdown lint tool
+run the Markdown lint tool as you work
 
 ```
 mdl .
 ```
 
-[submit a pull request](/git/pull_requests)
+[make edits and submit a pull request](/git/pull_requests)
