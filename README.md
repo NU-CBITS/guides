@@ -8,7 +8,9 @@ inspiration.
 * [development](/development)
   * [new projects](/development/new_projects)
 * [git](/git)
+  * [commits](/git/commits)
   * [pull requests](/git/pull_requests)
+  * [rebases](/git/rebases)
 
 ## Contributing
 
@@ -30,4 +32,5 @@ run the Markdown lint tool as you work
 mdl .
 ```
 
-[make edits and submit a pull request](/git/pull_requests)
+make edits, [commit](/git/commits) and [rebase](/git/rebases) often, then
+[submit a pull request](/git/pull_requests)
