@@ -8,6 +8,7 @@ inspiration.
 * [development](/development)
   * [code reviews](/development/code_reviews)
   * [new projects](/development/new_projects)
+  * [releases](/development/releases)
 * [git](/git)
   * [commits](/git/commits)
   * [pull requests](/git/pull_requests)
