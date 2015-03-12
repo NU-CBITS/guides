@@ -6,6 +6,7 @@ Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
 * [development](/development)
+  * [code reviews](/development/code_reviews)
   * [new projects](/development/new_projects)
 * [git](/git)
   * [commits](/git/commits)
