@@ -7,7 +7,8 @@ Every commit **must** be reviewed and signed off on by a peer with the following
 exceptions:
 
 * emergency patches to production **when no one is available to review**
-* version bump and CHANGELOG update to go with a **tagged release**
+* version bump and CHANGELOG update to go with a
+  [tagged release](/development/releases)
 * update of a **development or testing dependency** version
 
 Commits may be reviewed in bulk as part of a [pull request](/git/pull_requests).
