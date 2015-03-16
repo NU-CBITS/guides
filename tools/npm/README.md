@@ -12,6 +12,9 @@ projects whenever possible. This will simplify dependency management. The
 package scripts will be installed within the `node_modules/.bin` directory and
 can be run from there.
 
+`node_modules` **must** be added to the `.gitignore` file, and dependencies
+**must** be included in the `package.json` file.
+
 For example instead of installing Cordova glabally, it can be installed within
 a project and used the same way.
 
