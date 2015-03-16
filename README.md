@@ -13,6 +13,8 @@ inspiration.
   * [commits](/git/commits)
   * [pull requests](/git/pull_requests)
   * [rebases](/git/rebases)
+* [tools](/tools)
+  * [npm](/tools/npm)
 
 ## Contributing
 
