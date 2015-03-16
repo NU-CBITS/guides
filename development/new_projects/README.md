@@ -1,6 +1,6 @@
 # Development - New projects
 
-When setting up a new project, the following must be configured before
+When setting up a new project, the following **must** be configured before
 development and deployment can proceed:
 
 * GitHub repository/repositories
@@ -10,7 +10,7 @@ development and deployment can proceed:
 
 ## Rails
 
-The following must be run as part of the `rake` task:
+The following **must** be run as part of the `rake` task:
 
 * RuboCop
 * Brakeman
@@ -19,7 +19,7 @@ The following must be run as part of the `rake` task:
 
 ## Cordova
 
-The following must be run as part of the `npm test` task:
+The following **must** be run as part of the `npm test` task:
 
 * JSHint
 * unit and feature test suites
