@@ -15,6 +15,8 @@ inspiration.
   * [rebases](/git/rebases)
 * [tools](/tools)
   * [npm](/tools/npm)
+* [testing](/testing)
+  * [rspec](/testing/rspec)
 
 ## Contributing
 
