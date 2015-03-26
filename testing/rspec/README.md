@@ -65,9 +65,10 @@ The rails_helper should contain a `FIXED_TIMEPOINT` and a
 `before(:suite)` and `after(:suite)` to set and return that time point.
 Any example with time should relate to that fixed time point.
 
-```
-FIXED_TIMEPOINT = Time.local(2020, 9, 1, 10, 5, 0)
+`FIXED_TIMEPOINT = Time.local(2020, 9, 1, 10, 5, 0)`
 
+```
+RSpec.configure do |config|
   config.before :suite do
     Timecop.travel FIXED_TIMEPOINT
   end
@@ -75,6 +76,7 @@ FIXED_TIMEPOINT = Time.local(2020, 9, 1, 10, 5, 0)
   config.after :suite do
     Timecop.return
   end
+end  
 ```
 
 ### Use `let` blocks instead of `before` blocks to create data
