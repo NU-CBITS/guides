@@ -26,16 +26,16 @@ clone the repository
 git clone git@github.com:cbitstech/guides.git
 ```
 
-install the Markdown lint tool
+install dependencies
 
 ```
-gem install mdl
+bundle
 ```
 
 run the Markdown lint tool as you work
 
 ```
-mdl .
+rake
 ```
 
 make edits, [commit](/git/commits) and [rebase](/git/rebases) often, then
