@@ -38,9 +38,13 @@ blocks.
 ### Naming conventions
 
 * Top level: use `describe` with a constant name: `describe User ...`
+
 * 2nd level: use `describe` with a method name: `describe "#awesome?"`
+
 * Inner blocks: use a `context` that starts with "when":
+
 `context "when user is unsubscribed"`
+
 * Example describes the expectation: `it "is false"`
 
 In `describe` blocks use "#" for instance methods and "." for class methods.
@@ -76,7 +80,7 @@ RSpec.configure do |config|
   config.after :suite do
     Timecop.return
   end
-end  
+end
 ```
 
 ### Use `let` blocks instead of `before` blocks to create data
