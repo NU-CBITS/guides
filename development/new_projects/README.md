@@ -28,7 +28,12 @@ The following **must** be run as part of the `rake` task:
 
 ## Cordova
 
+All dependencies aside from those that are platform specific or installable only
+via GUI **must** be installable via `npm install`.
+
+The project **must** be built via the command `npm build`.
+
 The following **must** be run as part of the `npm test` task:
 
-* JSHint
+* linting (preferably [ESLint](http://eslint.org/))
 * unit and feature test suites
