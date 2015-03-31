@@ -16,7 +16,8 @@ inspiration.
 * [tools](/tools)
   * [npm](/tools/npm)
 * [testing](/testing)
-  * [rspec](/testing/rspec)
+  * [Appium](/testing/appium)
+  * [RSpec](/testing/rspec)
 
 ## Contributing
 
