@@ -10,30 +10,28 @@ the staging and production environments for a Rails application.
 
 require the `sentry-raven` gem in the `Gemfile`
 
-```
-group :staging, :production do
-  gem "sentry-raven",
-      git: "https://github.com/getsentry/raven-ruby.git",
-      tag: "0.12.3"
-end
+```ruby
+gem "sentry-raven",
+    git: "https://github.com/getsentry/raven-ruby.git",
+    tag: "0.12.3"
 ```
 
 add the following to `config/initializers/raven.rb`
 
-```
-if Rails.env.staging? || Rails.env.production?
-  require "raven"
+```ruby
+require "raven"
 
-  Raven.configure do |config|
-    config.dsn = Rails.application.config.sentry_dsn
-  end
+Raven.configure do |config|
+  config.environments = %w( staging production )
+  config.dsn = Rails.application.config.try(:sentry_dsn)
 end
 ```
 
-On staging, add the following to the `config/environments/staging.rb` file
-within the `Application.configure do` block
+In each environment (**not in version control**), add the following to the
+`config/environments/[environment].rb` file within the
+`Rails.application.configure do` block
 
-```
+```ruby
 config.sentry_dsn = "https://sentry.example.com"
 ```
 
