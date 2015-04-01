@@ -10,6 +10,7 @@ inspiration.
 * [development](/development)
   * [code reviews](/development/code_reviews)
   * [new projects](/development/new_projects)
+  * [database setup](/development/database_setup)
   * [releases](/development/releases)
 * [git](/git)
   * [commits](/git/commits)
