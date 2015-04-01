@@ -5,6 +5,8 @@ Documentation of the CBITS development process.
 Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
+* [deployment](/deployment)
+  * [Rails](/rails)
 * [development](/development)
   * [code reviews](/development/code_reviews)
   * [new projects](/development/new_projects)
@@ -13,11 +15,11 @@ inspiration.
   * [commits](/git/commits)
   * [pull requests](/git/pull_requests)
   * [rebases](/git/rebases)
-* [tools](/tools)
-  * [npm](/tools/npm)
 * [testing](/testing)
   * [Appium](/testing/appium)
   * [RSpec](/testing/rspec)
+* [tools](/tools)
+  * [npm](/tools/npm)
 
 ## Contributing
 
