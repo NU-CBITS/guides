@@ -6,7 +6,7 @@ Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
 * [deployment](/deployment)
-  * [Rails](/rails)
+  * [Rails](/deployment/rails)
 * [development](/development)
   * [code reviews](/development/code_reviews)
   * [new projects](/development/new_projects)
