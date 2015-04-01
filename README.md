@@ -6,11 +6,12 @@ Thanks to the [Thoughtbot guides](https://github.com/thoughtbot/guides) for
 inspiration.
 
 * [deployment](/deployment)
+  * [Mobile applications](/deployment/mobile_apps)
   * [Rails](/deployment/rails)
 * [development](/development)
   * [code reviews](/development/code_reviews)
-  * [new projects](/development/new_projects)
   * [database setup](/development/database_setup)
+  * [new projects](/development/new_projects)
   * [releases](/development/releases)
 * [git](/git)
   * [commits](/git/commits)
