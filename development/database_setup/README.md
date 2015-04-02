@@ -5,13 +5,15 @@
 ### Creating & Migrating the Database
 
 For apps or host applications, set up the database:
+
 ```
 rake db:drop db:create db:migrate
 ```
 
 ### Seeding the Database
 
-Update the ```seed.rake``` file by creating a ```seed:with_fixtures``` rake task.  Within this task, add the necessary fixture paths (i.e., file names):
+Update the `seed.rake` file by creating a `seed:with_fixtures` rake task. Within
+this task, add the necessary fixture paths (i.e., file names):
 
 ```ruby
 # lib/tasks/seed.rake
@@ -32,24 +34,30 @@ namespace :seed do
 end
 ```
 
-Once the ```seed.rake``` file has been updated, seed the database with fixtures:
+Once the `seed.rake` file has been updated, seed the database with fixtures:
+
 ```
 rake seed:with_fixtures
 ```
 
-Note: When a new fixture file is added, it won't seed the database unless it is added to the list of fixture paths within the ```seed.rake``` file.
+Note: When a new fixture file is added, it won't seed the database unless it is
+added to the list of fixture paths within the `seed.rake` file.
 
 ## Engines
 
-### Creating & Migrating the Database
+### Creating & Migrating the Dummy App Database
 
-For engines, setting up the database is similar but the rake commands are namespaced with ```app```:
+For engines, setting up the database is similar but the rake commands are
+namespaced with `app`:
+
 ```
 rake app:db:drop app:db:create app:db:migrate
 ```
-### Seeding the Database
 
-Update the ```seed.rake``` file by creating a ```seed:with_[engine_name]_fixtures``` rake task.  Within this task, add the necessary fixture paths (i.e., file names):
+### Seeding the Dummy App Database
+
+Update the `seed.rake` file by creating a `seed:with_[engine_name]_fixtures`
+rake task. Within this task, add the necessary fixture paths (i.e., file names):
 
 ```ruby
 # lib/tasks/seed.rake
