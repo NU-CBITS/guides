@@ -38,3 +38,12 @@ config.sentry_dsn = "https://sentry.example.com"
 
 The actual DSN URL can be found under **Settings** > **API Keys** within a
 project in the Sentry web application.
+
+Test that everything has been configured properly with
+
+```
+RAILS_ENV=[environment] bundle exec rake raven:test
+```
+
+This will trigger a `ZeroDivisionError` that should be transmitted and
+recorded by the Sentry server.
