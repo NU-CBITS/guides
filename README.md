@@ -37,7 +37,7 @@ install dependencies
 bundle
 ```
 
-run the Markdown lint tool as you work. For mdl rules see: 
+run the Markdown lint tool as you work. For mdl rules see:
 [Rules](https://github.com/mivok/markdownlint/blob/master/docs/RULES.md)
 
 ```
