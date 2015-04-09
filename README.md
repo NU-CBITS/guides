@@ -11,6 +11,7 @@ inspiration.
 * [development](/development)
   * [code reviews](/development/code_reviews)
   * [database setup](/development/database_setup)
+  * [iOS](/development/ios)
   * [new projects](/development/new_projects)
   * [releases](/development/releases)
 * [git](/git)
