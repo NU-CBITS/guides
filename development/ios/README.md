@@ -44,3 +44,11 @@ To change the target OS, you may need to download additional simulators. To do
 this, go to **Hardware** > **Device** > **Manage Devices...**. Click the `+` at
 the bottom left of the window, open the selector next to "iOS Version:", then
 select "Download more simulators...".
+
+## Debugging web views with the Safari Web Inspector
+
+With your simulator or connected device running the application and open to a
+web view, open Safari on your computer. Go to **Safari** > **Preferences...** >
+**Advanced**, and ensure "Show Develop menu in menu bar" is checked. Then go to
+**Develop** > **iOS Simulator** and select the page. You should see the Web
+Inspector.
