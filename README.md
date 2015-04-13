@@ -9,6 +9,7 @@ inspiration.
   * [Mobile applications](/deployment/mobile_apps)
   * [Rails](/deployment/rails)
 * [development](/development)
+  * [AngularJS](/development/angular)
   * [code reviews](/development/code_reviews)
   * [database setup](/development/database_setup)
   * [estimation](/development/estimation)
