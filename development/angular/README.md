@@ -20,14 +20,13 @@ contained therein.
 
 ## Application.js
 
-The Application.js file should list out all `$routeProvider` route definitions
-as well as including any `$rootScope` dependent application logic or constants.
+The Application.js file should configure `$routeProvider` route definitions.
 When using `$routeProvider` route definitions **must** use the `controllerAs` argument.
 
 ## Controllers
 
 JavaScript "classes" and non-Angular-specific code are always preferable
-to thealternative. With this in mind, all controllers **must** follow the alias
+to the alternative. With this in mind, all controllers **must** follow the alias
 pattern. E.g. references to controllers in views should follow the `controllerAs`
 argument defined in the Application.js file.
 
