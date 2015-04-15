@@ -1,6 +1,6 @@
 # Development - Releases
 
-**this document is a stub**
+Note: **this document is a stub**
 
 When a library or application is considered stable, it **may** be released. A
 release **must not** be part of a [pull request](/git/pull_requests). Tags on
