@@ -1,0 +1,6 @@
+# Development - Rails
+
+This sections describes best practices for developing Rails applications.
+
+* [database schema](/development/rails/database_schema)
+* [database setup](/development/rails/database_setup)
