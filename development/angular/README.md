@@ -30,28 +30,38 @@ to the alternative. With this in mind, all controllers **must** follow the alias
 pattern. E.g. references to controllers in views should follow the `controllerAs`
 argument defined in the Application.js file.
 
+Example
+
+```javascript
+function TheController() {}
+
+TheController.prototype.method1 = function() { ... };
+
+myModule.controller('TheController', TheController);
+```
+
 ## Services/Factories
 
 Unless there is a reason that a Service must be used, Factories **should**
 always be favored over Services. This removes any temptation to write code that
 expects to always receive a particular object instance.
 
-```
+```javascript
 var myApp = angular.module('myApp', []);
 
-//factory style, USE THIS
+// factory, PREFERRED
 myApp.factory('helloWorldFromFactory', function() {
-    return {
-        sayHello: function() {
-            return "Hello, World!"
-        }
-    };
+  return {
+    sayHello: function() {
+      return "Hello, World!"
+    }
+  };
 });
 
-//service style, NOT PREFERRED
+// service, NOT PREFERRED
 myApp.service('helloWorldFromService', function() {
-    this.sayHello = function() {
-        return "Hello, World!"
-    };
+  this.sayHello = function() {
+    return "Hello, World!"
+  };
 });
 ```
