@@ -2,17 +2,17 @@
 
 ## Purpose
 
-Selenium WebDriver is best used for creating robust, browser-based automated
-test suites. It is a suite of tools to automate web browsers. It has the
-ability to run in many browsers and operating systems and can be controlled by
-many programming languages and testing frameworks. See
+Selenium WebDriver is best used for creating robust automated test suites for
+web-based applications. It is a suite of tools to automate web browsers. It has
+the ability to run in many browsers and operating systems and can be controlled
+by many programming languages and testing frameworks. See
 [Selenium WebDriver](http://www.seleniumhq.org/projects/webdriver) for more
 information.
 
 ## Set up
 
 A great place to start with Selenium is their documentation
-[Selenium WebDriver Documentation](http://http://docs.seleniumhq.org/docs/03_webdriver.jsp).
+[Selenium WebDriver Documentation](http://docs.seleniumhq.org/docs/03_webdriver.jsp).
 
 Another good resource for Selenium Dave Haeffner's
 [Elemental Selenium](http://elementalselenium.com) which is a weekly email of
