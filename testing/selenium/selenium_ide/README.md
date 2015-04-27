@@ -5,7 +5,7 @@
 The Selenium-IDE is a Firefox add-on that allows you to record interactions
 with the browser that you can later play back. It is best used for quick
 testing, such as bug reproduction. See
-[Selenium IDE](www.seleniumhq.org/projects/ide) for more information.
+[Selenium IDE](http://www.seleniumhq.org/projects/ide) for more information.
 
 ## Set up
 

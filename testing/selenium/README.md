@@ -2,7 +2,7 @@
 
 ## Overview
 
-Straight from the horses mouth [SeleniumHQ](www.seleniumhq.org):
+Straight from the horse's mouth [SeleniumHQ](http://www.seleniumhq.org):
 
 Selenium automates browsers. That's it! What you do with that power is entirely
 up to you. Primarily, it is for automating web applications for testing
