@@ -25,6 +25,9 @@ inspiration.
 * [testing](/testing)
   * [Appium](/testing/appium)
   * [RSpec](/testing/rspec)
+  * [Selenium](/testing/selenium)
+    * [Selenium IDE](/testing/selenium/selenium_ide)
+    * [Selenium WebDriver](/testing/selenium/selenium_webdriver)
 * [tools](/tools)
   * [npm](/tools/npm)
 
