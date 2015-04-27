@@ -23,7 +23,9 @@ sign up for on this site.
 ### Ruby
 
 Installing selenium in your Ruby environment is as easy as running
-`gem install selenium-webdriver`
+```
+gem install selenium-webdriver
+```
 
 #### An example with Capybara
 
