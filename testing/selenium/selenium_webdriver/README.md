@@ -71,6 +71,8 @@ Capybara.default_driver = :selenium
 Then just write your Capybara tests as normal.
 
 ```
+require spec_helper
+
 describe 'A visitor to the site,', type: :feature do
   before do
     visit '/participants/sign_in'
