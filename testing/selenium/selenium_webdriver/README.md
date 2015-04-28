@@ -49,7 +49,7 @@ and for Selenium releases go
 
 First set up your gems in your Gemfile.
 
-```
+```ruby
 gem 'rspec', '3.1.0'
 gem 'capybara', '2.4.4'
 gem 'selenium-webdriver', '2.44.0'
@@ -58,20 +58,20 @@ gem 'selenium-webdriver', '2.44.0'
 Then set your requirements and configure RSpec and Capybara in your
 `spec_helper.rb`.
 
-```
+```ruby
 require 'rspec'
 require 'capybara'
 require 'capybara/rspec'
 require 'selenium-webdriver'
 ```
 
-```
+```ruby
 Capybara.default_driver = :selenium
 ```
 
 Then just write your Capybara tests as normal.
 
-```
+```ruby
 require spec_helper
 
 describe 'A visitor to the site,', type: :feature do
