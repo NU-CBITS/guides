@@ -14,6 +14,7 @@ inspiration.
   * [estimation](/development/estimation)
   * [iOS](/development/ios)
   * [new projects](/development/new_projects)
+  * [postgres](/development/postgres)
   * [Rails](/development/rails)
     * [database schema](/development/rails/database_schema)
     * [database setup](/development/rails/database_setup)
