@@ -117,6 +117,22 @@ end
 
 ### Controllers
 
+When testing Rails Engine controllers, it is necessary to inject the route
+helper methods. Without doing this, you will end up with errors similar to
+`No route matches...`. For example
+
+```ruby
+require 'rails_helper'
+
+RSpec.describe MyEngineController, type: :controller do
+  routes { MyEngine::Engine.routes }
+
+  it 'works' do
+    get :index
+  end
+end
+```
+
 ### Models
 
 ### Mailers
