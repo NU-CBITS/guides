@@ -113,6 +113,41 @@ end
 
 ### Mocking and Stubbing
 
+**mock**: a class that implements the interface of an existing class, or a
+function that implements the signature of an existing function. A mock can be
+programmed with specific return values or exceptions, and it is programmed with
+expectations about what methods will be called and possibly what the arguments
+will be.
+
+A mock's purpose is to verify the behavior of a class or function. The class or
+function under test **must** be tested without modification, but any objects or
+functions external to it **may** be mocked.
+
+**stub**: like a mock, except that it does not verify the method calls and
+their arguments.
+
+A stub does not test behavior.
+
+#### Verifying doubles
+
+RSpec has a type of mock called a verifying double. Its purpose is to avoid some
+of the brittleness inherent to a mock. When used in its strict mode, it will
+ensure that the class and methods being mocked exist. If they don't, an
+exception will be raised. For example
+
+```ruby
+RSpec.configure do |config|
+  config.mock_with :rspec do |mocks|
+    mocks.verify_doubled_constant_names = true
+  end
+end
+
+hot_dog = instance_double('HotDog')
+```
+
+Here, as long as there is a class with the name `HotDog`, the spec will run.
+Otherwise, an exception will be raised.
+
 ### Views
 
 ### Controllers
