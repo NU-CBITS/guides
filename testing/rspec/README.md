@@ -71,7 +71,7 @@ Any example with time should relate to that fixed time point.
 
 `FIXED_TIMEPOINT = Time.local(2020, 9, 1, 10, 5, 0)`
 
-```
+```ruby
 RSpec.configure do |config|
   config.before :suite do
     Timecop.travel FIXED_TIMEPOINT
@@ -91,7 +91,7 @@ end
 
 Bad Example
 
-```
+```ruby
 it 'publishes the article' do
   article.publish
 
@@ -103,7 +103,7 @@ end
 
 Good Example
 
-```
+```ruby
 it 'publishes the article' do
   expect { article.publish }.to change(Article, :count).by(1)
 end
