@@ -12,14 +12,12 @@ sudo find / -name "pg_config"
   command. Example:
 
 ```
-gem install pg -- --with-pg-config=/Applications/Postgres.
-app/Contents/Versions/9.3/bin/pg_config
+gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config
 ```
 
 * If you continue to receive errors upon installing the pg gem, try something
   like the following:
 
 ```
-env ARCHFLAGS="-arch x86_64" gem install pg -- --with-pg-
-config="/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config"
+env ARCHFLAGS="-arch x86_64" gem install pg -- --with-pg-config="/Applications/Postgres.app/Contents/Versions/9.3/bin/pg_config"
 ```
