@@ -52,7 +52,8 @@ testing, such as bug reproduction. See
   * "Pause / Resume" - useful in debugging
   * "Step" - can be very useful in debugging after the test has paused,
     basically it just steps through the actions
-  * "Apply rollup rules"
+  * "Apply rollup rules" - allows repetitive sequence of actions to be grouped
+    into a single action.
   * "Turn test scheduler on/off"
   * "Click to Record"
 * Below the toolbar is the "Test Case" window.
@@ -83,7 +84,14 @@ testing, such as bug reproduction. See
     * This shows documentation and information specific to an action you have
       highlighted.
   * "UI-Element"
+    * Allows you to define a mapping between semantically meaningful names of
+      elements and the elements themselves. The mapping is defined using JSON.
+      * For more information, see UI-Element Documentation in the Help Menu of
+        the IDE.
   * "Rollup"
+    * Rules for rollup - grouping repetitive actions into a single action
+      * For more information, see UI-Element Documentation in the Help Menu of
+        the IDE.
 
 * Some other useful features that are not immediately apparent
   * "Export Test Case As"
