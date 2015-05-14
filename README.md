@@ -30,6 +30,7 @@ inspiration.
     * [Selenium IDE](/testing/selenium/selenium_ide)
     * [Selenium WebDriver](/testing/selenium/selenium_webdriver)
 * [tools](/tools)
+  * [android](/tools/android)
   * [npm](/tools/npm)
 
 ## Contributing
