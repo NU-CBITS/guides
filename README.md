@@ -25,6 +25,7 @@ inspiration.
   * [rebases](/git/rebases)
 * [testing](/testing)
   * [Appium](/testing/appium)
+  * [JavaScript](/testing/javascript)
   * [RSpec](/testing/rspec)
   * [Selenium](/testing/selenium)
     * [Selenium IDE](/testing/selenium/selenium_ide)
