@@ -29,7 +29,7 @@ en:
 
 ## Use the locale formats for both display and for testing
 
-* In order to use the locale-defined formats, use the following syntax:
+* To utilize the locale-defined formats, use the following syntax:
 
 ```
 
@@ -37,5 +37,5 @@ I18n.l(Date.today, format: :standard)
 
 ```
 
-** The `I18n.l` method pulls the format from the configured locale file.
-** This makes universal formatting changes are simple.
+* The `I18n.l` method pulls the format from the configured locale file.
+* This makes universal formatting changes simple.
