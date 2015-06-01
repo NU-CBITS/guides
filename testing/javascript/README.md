@@ -62,6 +62,12 @@ launch_in_dev:
 test_page: test.html
 ```
 
+### Gotchas
+
+Due to the dynamic wrapping of code that Blanket.js does to instrument it, you
+will have to disable it to set breakpoints and step through code for debugging
+in the browser.
+
 ## Test'em
 
 [Test'em](https://github.com/airportyh/testem) is a tool for running tests in
