@@ -47,6 +47,9 @@ select "Download more simulators...".
 
 ## Debugging web views with the Safari Web Inspector
 
+To debug on a connected device, turn on the **Web Inspector** setting under
+**Settings** > **Safari**.
+
 With your simulator or connected device running the application and open to a
 web view, open Safari on your computer. Go to **Safari** > **Preferences...** >
 **Advanced**, and ensure "Show Develop menu in menu bar" is checked. Then go to
