@@ -1,0 +1,49 @@
+<html id="my-project">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="css/application.css" />
+
+    <title>My Project</title>
+  </head>
+
+  <body>
+    <div ng-view></div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/angular-resource.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+
+    <script type="text/javascript" src="js/Application.js"></script>
+    
+    <script>
+      // Handle the Cordova specific events from outside the application.
+      (function() {
+        var $rootScope;
+
+        function initialize() {
+          // Access the $rootScope from outside the application.
+          var injector = angular
+                         .bootstrap(document
+                         .getElementById('my-project'), ['myApp']);
+
+          $rootScope = injector.get('$rootScope');
+        }
+
+        function onResume() {
+          // Let the application know it is resuming.
+          if ($rootScope) {
+            $rootScope.$broadcast('resume');
+          }
+        }
+
+        document.addEventListener('deviceready', initialize, false);
+        document.addEventListener('resume', onResume, false);
+      })();
+    </script>
+  </body>
