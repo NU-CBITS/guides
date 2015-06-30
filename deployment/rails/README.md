@@ -1,5 +1,12 @@
 # Deployment - Rails
 
+## Capistrano
+
+Deployments are managed by
+[Capistrano](https://github.com/capistrano/capistrano), and configured by
+scripts written for that purpose. There is a central, private repository with
+the relevant information.
+
 ## Exception tracking
 
 The tool we use to track unhandled exceptions within a Rails application is
@@ -13,7 +20,7 @@ require the `sentry-raven` gem in the `Gemfile`
 ```ruby
 gem "sentry-raven",
     git: "https://github.com/getsentry/raven-ruby.git",
-    tag: "0.12.3"
+    tag: "0.13.3"
 ```
 
 add the following to `config/initializers/raven.rb`
