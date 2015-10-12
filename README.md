@@ -35,6 +35,7 @@ inspiration.
 * [tools](/tools)
   * [android](/tools/android)
   * [npm](/tools/npm)
+  * [resque](/tools/resque)
 
 ## Contributing
 
