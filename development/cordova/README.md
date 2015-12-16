@@ -5,14 +5,14 @@ application.
 
 To begin a Cordova 5 project, start with a `package.json` file. It is best
 practice to install dependencies within a project rather than globally, which is
-why you shouldn't follow the [Cordova instructions](http://cordova.apache.org/docs/en/5.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+why you shouldn't follow the [Cordova instructions](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
 to the letter.
 
 ```
 $ echo "{}" > package.json
-$ npm install --save angular@1.4.1 angular-resource@1.4.1 angular-route@1.4.1 \
-> cordova@5.1.1 moment@2.10.3
-$ npm install --save-dev angular-mocks@1.4.1 appium@1.4.3 chai@3.0.0 \
+$ npm install --save angular@1.4.7 angular-resource@1.4.7 angular-route@1.4.7 \
+> cordova@5.4.1 moment@2.10.3
+$ npm install --save-dev angular-mocks@1.4.7 appium@1.4.3 chai@3.0.0 \
 > chai-as-promised@5.1.0 eslint@0.23.0 mocha@2.2.5 sinon@1.15.3 testem@0.8.3 \
 > wd@0.3.12
 ```
@@ -29,3 +29,28 @@ $
 
 [View this example](../../examples/cordova) to get an idea of how to structure
 the Angular app within Cordova.
+
+## Plugins
+
+As with other forms of dependency management, it is best practice to specify the
+semantic version (or approximate version) that the application has been built
+with to aid others in building it.
+
+One way of locking down versions is to store them in the `config.xml` file.
+Cordova CLI provides an easy way to do this. For example, if you want to install
+and lock to the latest version of `cordova-plugin-device`, you would use the
+command:
+
+```
+$ ./node_modules/.bin/cordova plugin add cordova-plugin-device --save --shrinkwrap
+Fetching plugin "cordova-plugin-device@~1.1.0" via npm
+Installing "cordova-plugin-device" for android
+Saved plugin info for "cordova-plugin-device" to config.xml
+```
+
+It will install the plugin and add an extra line of configuration to the end of
+the `config.xml` file:
+
+```
+<plugin name="cordova-plugin-device" spec="~1.1.0" />
+```
