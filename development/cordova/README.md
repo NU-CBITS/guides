@@ -54,3 +54,16 @@ the `config.xml` file:
 ```
 <plugin name="cordova-plugin-device" spec="~1.1.0" />
 ```
+
+## Angular 1.x
+
+The standard approach to bootstrapping your Angular 1.x application is
+automatically.
+
+```html
+<body ng-app="MyAngularAppModule">
+```
+
+**Don't do this in Cordova!** You should always use the
+[manual bootstrap](https://docs.angularjs.org/api/ng/function/angular.bootstrap)
+method.
