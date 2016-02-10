@@ -13,6 +13,5 @@ reports, follow these steps upon notification:
 1. Add details to the bug story with a summary, context, and a URL to the HockeyApp
    crash group.
 1. Finally annotate the HockeyApp crash group with a link to the Pivotal bug.
-1. After the bug is fixed and the Pivotal story is delivered, mark the HockeyApp
-   crash group as complete.
-
+1. After the bug is fixed, the fix is destributed and the Pivotal story
+   is delivered, mark the HockeyApp crash group as complete.

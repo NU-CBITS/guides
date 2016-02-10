@@ -34,6 +34,7 @@ inspiration.
     * [Selenium WebDriver](/testing/selenium/selenium_webdriver)
 * [tools](/tools)
   * [android](/tools/android)
+  * [hockeyapp](/tools/hockeyapp)
   * [npm](/tools/npm)
   * [resque](/tools/resque)
 
