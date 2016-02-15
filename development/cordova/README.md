@@ -67,3 +67,43 @@ automatically.
 **Don't do this in Cordova!** You should always use the
 [manual bootstrap](https://docs.angularjs.org/api/ng/function/angular.bootstrap)
 method.
+
+## HockeyApp
+
+[HockeyApp](https://rink.hockeyapp.net) can be configured to report crashes
+(unhandled native exceptions). A couple of steps are necessary.
+
+### Add the HockeyAppSDK as a dependency to the build process
+
+Edit the `build.gradle` file to include the following entry under `dependencies`
+
+```
+dependencies {
+    ...
+    compile 'net.hockeyapp.android:HockeySDK:3.7.0'
+}
+```
+
+### Modify the MainActivity.java file
+
+```
+...
+import net.hockeyapp.android.CrashManager;
+...
+public class MainActivity extends CordovaActivity
+{
+    private static String APP_ID = "app-id-provided-by-HockeyApp";
+
+    ...
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checkForCrashes();
+    }
+
+    private void checkForCrashes() {
+        CrashManager.register(this, APP_ID);
+    }
+}
+```
