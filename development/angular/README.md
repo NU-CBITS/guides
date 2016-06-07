@@ -1,5 +1,10 @@
 # Development - AngularJS
 
+**Note**: this document is deprecated. It refers to Angular 1.x development. It
+needs to be updated for Angular 2.x development. For the time being, refer to
+the official
+[Angular 2 style guide](https://angular.io/docs/ts/latest/guide/style-guide.html).
+
 All source code **must** be located in the `/src` folder.
 
 All files **must** define a single module, e.g. a service, directive,

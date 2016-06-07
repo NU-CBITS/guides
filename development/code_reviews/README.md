@@ -8,10 +8,10 @@ exceptions:
 
 * emergency patches to production **when no one is available to review**
 * version bump and CHANGELOG update to go with a
-  [tagged release](/development/releases)
+  [tagged release](../development/releases)
 * update of a **development or testing dependency** version
 
-Commits may be reviewed in bulk as part of a [pull request](/git/pull_requests).
+Commits may be reviewed in bulk as part of a [pull request](../../git/pull_requests).
 
 Reviews are done within GitHub, and comments **may** be added to specific
 lines, commits or pull requests.
