@@ -2,7 +2,8 @@
 
 ## Application version
 
-All applications should be versioned using semantic versioning. Someone using
+All applications should be versioned using
+[semantic versioning](development/releases). Someone using
 the application on their mobile device should be able to find the version
 under Settings > Apps > (name of application). This version number should be
 tied to a release number on GitHub.

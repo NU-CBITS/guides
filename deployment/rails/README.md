@@ -10,7 +10,7 @@ the relevant information.
 ## Exception tracking
 
 The tool we use to track unhandled exceptions within a Rails application is
-[Sentry](http://sentry.readthedocs.org/).
+[Sentry](https://docs.getsentry.com/on-premise/).
 
 In the following example, the Sentry client Raven is being configured to run in
 the staging and production environments for a Rails application.
@@ -18,9 +18,7 @@ the staging and production environments for a Rails application.
 require the `sentry-raven` gem in the `Gemfile`
 
 ```ruby
-gem "sentry-raven",
-    git: "https://github.com/getsentry/raven-ruby.git",
-    tag: "0.13.3"
+gem "sentry-raven", "~> 0.15"
 ```
 
 add the following to `config/initializers/raven.rb`
