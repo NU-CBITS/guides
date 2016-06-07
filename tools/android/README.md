@@ -2,4 +2,4 @@
 
 This directory houses guides for using different Android tools
 
-* [developer_options](/tools/android/developer_options)
+* [developer_options](developer_options)
