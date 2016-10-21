@@ -55,3 +55,7 @@ web view, open Safari on your computer. Go to **Safari** > **Preferences...** >
 **Advanced**, and ensure "Show Develop menu in menu bar" is checked. Then go to
 **Develop** > **iOS Simulator** and select the page. You should see the Web
 Inspector.
+
+## Building for distribution
+
+Set the Deployment Target to the lowest OS version you intend to support.
