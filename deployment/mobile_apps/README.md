@@ -12,3 +12,7 @@ tied to a release number on GitHub.
 
 All mobile hybrid applications will use Hockey App for alpha and beta
 distribution, whether private or public.
+
+## iOS Distribution
+
+For specific details on iOS distribution see [ios distribution](ios).
