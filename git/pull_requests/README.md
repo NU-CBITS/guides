@@ -4,17 +4,17 @@ When you want to make a contribution to a repository, start by creating a new
 local branch.
 
 ```
-git checkout -b <initials>_<story ID>_<blurb>
+git checkout -b <initials>_<JIRA Key>_<blurb>
 ```
 
-Here, `<initials>` are your initials, `<story ID>` is the identifier of the
-story in Pivotal Tracker and `<blurb>` is 1-3 words related to the topic of the
+Here, `<initials>` are your initials, `<JIRA Key>` is the identifier of the
+story in JIRA and `<blurb>` is 1-3 words related to the topic of the
 pull request.
 
 For example
 
 ```
-git checkout -b cbt_918523_superfluous_words
+git checkout -b cbt_RC-22_superfluous_words
 ```
 
 When satisfied, commit your changes then check for updates and rebase. Finally,
