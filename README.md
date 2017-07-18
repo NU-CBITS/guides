@@ -25,6 +25,8 @@ inspiration.
   * [commits](git/commits)
   * [pull requests](git/pull_requests)
   * [rebases](git/rebases)
+* [patterns](patterns)
+  * [Rails](patterns/rails)
 * [testing](testing)
   * [Appium](testing/appium)
   * [JavaScript](testing/javascript)
