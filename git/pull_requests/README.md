@@ -3,7 +3,7 @@
 When you want to make a contribution to a repository, start by creating a new
 local branch.
 
-```
+```bash
 git checkout -b <initials>_<JIRA Key>_<blurb>
 ```
 
@@ -13,18 +13,18 @@ pull request.
 
 For example
 
-```
+```bash
 git checkout -b cbt_RC-22_superfluous_words
 ```
 
 When satisfied, commit your changes then check for updates and rebase. Finally,
 push your changes.
 
-```
+```bash
 git commit -v
 git fetch
 git rebase origin/master
-git push origin cbt_918523_superfluous_words
+git push origin head
 ```
 
 Here, the `-v` or `--verbose` flag opens the commit message editor with a diff
