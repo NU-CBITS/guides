@@ -6,7 +6,7 @@
 
 In order to use structure.sql, in `config/application.rb`
 
-```
+```ruby
 Rails.application.configure do
   config.active_record.schema_format = :sql
 end
