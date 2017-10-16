@@ -4,44 +4,53 @@
 
 ### Creating & Migrating the Database
 
+In order to use structure.sql, in `config/application.rb`
+
+```ruby
+Rails.application.configure do
+  config.active_record.schema_format = :sql
+end
+```
+
 For apps or host applications, set up the database:
 
 ```
-rake db:drop db:create db:migrate
+rails db:setup
+```
+
+On subsequent builds, you will need to run
+
+```
+rails db:reset
 ```
 
 ### Seeding the Database
 
-Update the `seed.rake` file by creating a `seed:with_fixtures` rake task. Within
-this task, add the necessary fixture paths (i.e., file names):
+Update the `seeds.rb` file by creating necessary data using factories:
 
 ```ruby
-# lib/tasks/seed.rake
+# db/seeds.rb
 
-require "active_record/fixtures"
+require "factory_girl"
 
-namespace :seed do
-  desc "seed the database with fixtures from spec/fixtures"
-  task with_fixtures: :environment do
-    path = File.join(File.dirname(__FILE__), "..", "..", "spec", "fixtures")
-    ActiveRecord::FixtureSet.create_fixtures path, [
-      :fixture_file_1,
-      :fixture_file_2,
-      :fixture_file_3
-      ...
-    ]
-  end
+USER_COUNT = 1
+
+def seed_development
+  puts "Seeding development data."
+
+  FactoryGirl.create_list :user, USER_COUNT
+end
+
+if Rails.env.development?
+  seed_development
 end
 ```
 
-Once the `seed.rake` file has been updated, seed the database with fixtures:
+Once the `seed.rb` file has been updated, seed the database:
 
 ```
-rake seed:with_fixtures
+rake db:seed
 ```
-
-Note: When a new fixture file is added, it won't seed the database unless it is
-added to the list of fixture paths within the `seed.rake` file.
 
 ## Engines
 
